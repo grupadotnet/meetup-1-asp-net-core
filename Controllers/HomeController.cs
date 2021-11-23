@@ -20,6 +20,7 @@ namespace meetup_1_asp_net_core.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogError("Some error");
             return View();
         }
 
