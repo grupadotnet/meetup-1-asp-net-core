@@ -6,12 +6,12 @@ namespace meetup_1_asp_net_core.Controllers
     {
         public string Index()
         {
-            return "This is my default action...";
+            return "Hello World from CommentsController";
         }
 
         public string Welcome()
         {
-            return "This is the Welcome action method...";
+            return "Welcome to the .NET Group";
         }
 
         string Custom()
