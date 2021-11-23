@@ -13,5 +13,10 @@ namespace meetup_1_asp_net_core.Controllers
         {
             return "This is the Welcome action method...";
         }
+
+        string Custom()
+        {
+            return "This won't be displayed";
+        }
     }
 }
