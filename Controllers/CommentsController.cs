@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using meetup_1_asp_net_core.Interfaces;
+using meetup_1_asp_net_core.Models;
 
 namespace meetup_1_asp_net_core.Controllers
 {
@@ -34,6 +35,17 @@ namespace meetup_1_asp_net_core.Controllers
             });
         }
 
+        [HttpPost]
+        public IActionResult Send([FromForm] NewCommentRequest request)
+        {
+            _commentsService.CreateComment(request.Message);
+
+            return StatusCode(201, new {
+                Created = true,
+                Comment = request.Message,
+            });
+        }
+ 
         string Custom()
         {
             return "This won't be displayed";
