@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using meetup_1_asp_net_core.Interfaces;
+using meetup_1_asp_net_core.Services;
 
 namespace meetup_1_asp_net_core
 {
@@ -23,6 +25,8 @@ namespace meetup_1_asp_net_core
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<ICommentsService, CommentsService>();
+
             services.AddControllersWithViews();
         }
 
