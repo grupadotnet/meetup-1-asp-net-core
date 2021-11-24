@@ -1,12 +1,22 @@
 using Microsoft.AspNetCore.Mvc;
+using meetup_1_asp_net_core.Interfaces;
 
 namespace meetup_1_asp_net_core.Controllers
 {
     public class CommentsController : Controller
     {
+        private readonly ICommentsService _commentsService;
+
+        public CommentsController(ICommentsService commentsService)
+        {
+            _commentsService = commentsService;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            var comments = _commentsService.GetAllComments();
+
+            return View(comments);
         }
 
         public IActionResult Welcome()
