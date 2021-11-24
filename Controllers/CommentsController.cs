@@ -38,6 +38,9 @@ namespace meetup_1_asp_net_core.Controllers
         [HttpPost]
         public IActionResult Send([FromForm] NewCommentRequest request)
         {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
             _commentsService.CreateComment(request.Message);
 
             return StatusCode(201, new {
