@@ -43,10 +43,7 @@ namespace meetup_1_asp_net_core.Controllers
 
             _commentsService.CreateComment(request.Message);
 
-            return StatusCode(201, new {
-                Created = true,
-                Comment = request.Message,
-            });
+            return Redirect("/Comments");
         }
  
         string Custom()
