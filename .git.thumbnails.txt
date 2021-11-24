@@ -5,3 +5,4 @@ cd08ec0c2c: Displaying user name
 58e4411974: Added DI scope
 ae83b065b8: Displaying comments
 a9de2afc6d: Validating model state
+5a005a3b49: Saving comments in memory
