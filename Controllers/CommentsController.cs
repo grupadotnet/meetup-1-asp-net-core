@@ -4,20 +4,24 @@ namespace meetup_1_asp_net_core.Controllers
 {
     public class CommentsController : Controller
     {
-        public string Index()
+        public IActionResult Index()
         {
-            return "Hello World from CommentsController";
+            return View();
         }
 
-        public string Welcome()
+        public IActionResult Welcome()
         {
-            return "Welcome to the .NET Group";
+            return StatusCode(503);
         }
 
-        public string Name(string name, int age)
+        public IActionResult Name(string name, int age)
         {
-            // String interpolation
-            return $"Hello {name}, you are {age} years old";
+            return Ok(new {
+                success = true,
+                response = "Ok",
+                firstName = name,
+                age
+            });
         }
 
         string Custom()

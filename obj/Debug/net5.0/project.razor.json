@@ -15634,6 +15634,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Jarek\\Desktop\\.NET PK\\spotkania\\meetup-1-asp-net-core\\Views\\Comments\\Index.cshtml",
+      "TargetPath": "Views\\Comments\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Jarek\\Desktop\\.NET PK\\spotkania\\meetup-1-asp-net-core\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"

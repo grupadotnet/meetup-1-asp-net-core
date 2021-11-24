@@ -38,3 +38,4 @@ C:\Users\Jarek\Desktop\.NET PK\spotkania\meetup-1-asp-net-core\obj\Debug\net5.0\
 C:\Users\Jarek\Desktop\.NET PK\spotkania\meetup-1-asp-net-core\obj\Debug\net5.0\meetup-1-asp-net-core.pdb
 C:\Users\Jarek\Desktop\.NET PK\spotkania\meetup-1-asp-net-core\obj\Debug\net5.0\meetup-1-asp-net-core.genruntimeconfig.cache
 C:\Users\Jarek\Desktop\.NET PK\spotkania\meetup-1-asp-net-core\obj\Debug\net5.0\meetup-1-asp-net-core.csproj.CopyComplete
+C:\Users\Jarek\Desktop\.NET PK\spotkania\meetup-1-asp-net-core\obj\Debug\net5.0\Razor\Views\Comments\Index.cshtml.g.cs
